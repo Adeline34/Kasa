@@ -3,7 +3,7 @@ import Banner from "../components/banner/Banner";
 import Footer from "../components/footer/Footer";
 import picture from "../pictures/banniereAbout.webp";
 import Collapsed from "../components/collapsed/Collapsed";
-import AboutData from "../../public/about.json"
+import AboutData from "../data/about.json";
 
 const About = () => {
   return (
