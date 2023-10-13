@@ -1,0 +1,36 @@
+/* animations */
+
+@mixin rotation0A180Deg {
+  transition: all 300ms ease-in-out;
+  transform: rotate(180deg);
+}
+
+@mixin rotation180A0Deg {
+  transition: all 300ms ease-in-out;
+  transform: rotate(0deg);
+}
+
+@mixin moveDropdown {
+  animation: moveDropdown 0.3s linear forwards;
+}
+
+@keyframes moveDropdown {
+  0% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
+
+@mixin souligneLien {
+  transform: translateX(-50%);
+  animation: souligneLien 0.3s ease forwards;
+}
+
+@keyframes souligneLien {
+  to {
+    width: 100%;
+  }
+}
