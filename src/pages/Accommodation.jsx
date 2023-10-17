@@ -38,6 +38,8 @@ export default function Fetch() {
     
     const apartment = apartments.find((item) => item.id === id)
 
+    apartment.rating = parseFloat(apartment.rating);
+
     return (
         <div>
             {!apartment && (<Navigate to='Error404' replace={true} />)}
@@ -45,7 +47,7 @@ export default function Fetch() {
                 <div>
                     <div className="container-general">
                         <Header />
-                        <Carousel pictures={apartment.pictures} title={apartment.title} />
+                        <Carousel pictures={apartment.pictures} title={apartment.title} pictureLength={apartment.pictures.length}/>
                         <AccommodationDetail apartment={apartment} />
                         <AccommodationCollapsed description={apartment.description} equipments={apartment.equipments} />
                     </div>

@@ -10,7 +10,7 @@ const Collapsed = ({ title, content }) => {
      setIsActive(!isActive);
   };
 
-  // {isActive && <div className="accordion-content isActive">{content}</div>}
+
   return (
     <div className="collapsed-item">
       <div className="collapsed-title" onClick={handleClick}>

@@ -11,7 +11,7 @@ const About = () => {
       <div className="container-general">
         <Header />
         <section className="image-banner banner-about">
-          <Banner image={picture} alt="photo de montagne" title1="" title2="" />
+          <Banner image={picture} alt="photo de montagne" title=""/>
         </section>
         <section className="collapsedSection">
           <div className="collapsedBody">
