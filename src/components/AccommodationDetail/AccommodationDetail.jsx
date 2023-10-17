@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Star from "../star/Star";
 
 const AccommodationDetail = ({ apartment }) => {
- 
+
   return (
     <section className="title" >
       <div className='titleInfo'>
@@ -34,7 +34,7 @@ AccommodationDetail.propTypes = {
       picture: PropTypes.string.isRequired,
     }).isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-    rating: PropTypes.number.isRequired,
+    rating: PropTypes.node.isRequired,
   }).isRequired,
 };
 

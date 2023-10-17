@@ -38,8 +38,6 @@ export default function Fetch() {
     
     const apartment = apartments.find((item) => item.id === id)
 
-    apartment.rating = parseFloat(apartment.rating);
-
     return (
         <div>
             {!apartment && (<Navigate to='Error404' replace={true} />)}

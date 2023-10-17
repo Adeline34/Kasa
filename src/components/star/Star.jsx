@@ -20,7 +20,7 @@ const Star = ({ starRating }) => {
 
 
 Star.propTypes = {
-  starRating: PropTypes.number.isRequired,
+  starRating: PropTypes.node.isRequired,
 };
 
 
